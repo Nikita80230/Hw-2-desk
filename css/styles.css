@@ -3,18 +3,16 @@
   --second-title-color: #ffffff;
   --text-color: #757575;
   --contacts-color: rgba(255, 255, 255, 0.6);
-  --first-button-color: #ffffff;
-  --second-button-color: #212121;
-  --header-text-color: #212121;
   --accent-color: #2196f3;
   --background-title-color: #2f303a;
   --our-team-color: #f5f4fa;
-  --header-contacts-color: #757575;
-  --portfolio-btn-color: #f5f4fa;
 }
 
 body {
   font-family: "Roboto", "sans-serif";
+  color: var(--text-color);
+  background-color: var(--second-title-color);
+  letter-spacing: 0.02em;
 }
 .list {
   list-style: none;
@@ -26,7 +24,7 @@ body {
 /*________LOGO________*/
 
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", "sans-serif";
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -39,7 +37,7 @@ body {
   color: #000;
 }
 .logo-footer-studio {
-  color: #ffffff;
+  color: var(--second-title-color);
 }
 
 /*________HEADER________*/
@@ -66,7 +64,7 @@ body {
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  color: var(--header-contacts-color);
+  color: var(--text-color);
 }
 
 .header-mail {
@@ -74,7 +72,7 @@ body {
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  color: var(--header-contacts-color);
+  color: var(--text-color);
 }
 
 /*________HERO________*/
@@ -100,11 +98,19 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--first-button-color);
+  color: var(--main-title-color);
   cursor: pointer;
-  background-color: var(--accent-color);
+  background-color: var(--our-team-color);
   border: none;
+  border-radius: 4px;
 }
+
+.hero-btn:focus,
+.hero-btn:hover {
+  color: var(--second-title-color);
+  background-color: var(--accent-color);
+}
+
 /*________ABOUT US________*/
 .about-us-character {
   font-weight: 700;
@@ -137,7 +143,7 @@ body {
 /*________OUR TEAM________*/
 
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--our-team-color);
 }
 .our-team-title {
   font-weight: bold;
@@ -182,14 +188,14 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--second-title-color);
 }
 .footer-mail,
 .footer-tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--header-contacts-color);
+  color: var(--text-color);
 }
 
 /*========PORTFOLIO========*/
@@ -200,20 +206,27 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-button-color);
+  color: var(--main-title-color);
   cursor: pointer;
-  background-color: var(--portfolio-btn-color);
+  background-color: var(--our-team-color);
   border-radius: 4px;
   border: none;
+}
+.current-button {
+  background-color: var(--accent-color);
+  color: var(--second-title-color);
 }
 .filter-btn:focus,
 .filter-btn:hover {
   background-color: var(--accent-color);
-  color: var(--first-button-color);
+  color: var(--second-title-color);
 }
 .project-photo {
   width: 370px;
   height: 294px;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 .project-name {
   font-weight: bold;
