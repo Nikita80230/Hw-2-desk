@@ -32,12 +32,15 @@ body {
   letter-spacing: 0.03em;
 }
 .logo-web {
+  font-family: "Raleway", "sans-serif"
   color: var(--accent-color);
 }
 .logo-studio {
+  font-family: "Raleway", "sans-serif"
   color: #000;
 }
 .logo-footer-studio {
+  font-family: "Raleway", "sans-serif"
   color: var(--second-title-color);
 }
 
