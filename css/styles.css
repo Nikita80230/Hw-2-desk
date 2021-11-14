@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Roboto", "sans-serif";
+  font-family: "Roboto", sans-serif;
   color: var(--text-color);
   background-color: var(--second-title-color);
   letter-spacing: 0.02em;
@@ -25,22 +25,22 @@ body {
 /*________LOGO________*/
 
 .logo {
-  font-family: "Raleway", "sans-serif";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
 }
 .logo-web {
-  font-family: "Raleway", "sans-serif"
+  /*font-family: "Raleway", sans-serif;*/
   color: var(--accent-color);
 }
 .logo-studio {
-  font-family: "Raleway", "sans-serif"
+  /*font-family: "Raleway", sans-serif;*/
   color: #000;
 }
 .logo-footer-studio {
-  font-family: "Raleway", "sans-serif"
+  /*font-family: "Raleway", sans-serif;*/
   color: var(--second-title-color);
 }
 
@@ -64,6 +64,7 @@ body {
 }
 
 .current-button-nav {
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -120,6 +121,7 @@ body {
   background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
+  font-family: inherit;
 }
 
 .hero-btn:focus,
@@ -170,8 +172,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
-.our-team-mate {
-}
 
 .our-team-mate-photo {
   width: 270px;
@@ -197,10 +197,7 @@ body {
 .footer {
   background-color: var(--background-title-color);
 }
-.footer-contacts {
-}
-.footer-contacts-list {
-}
+
 .footer-address {
   font-style: normal;
   font-size: 14px;
@@ -208,8 +205,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
-.footer-mail,
-.footer-tel {
+.footer-contact {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -217,23 +213,20 @@ body {
   color: var(--text-color);
 }
 
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--accent-color);
-}
-.footer-tel:focus,
-.footer-tel:hover {
+.footer-contact:focus,
+.footer-contact:hover {
   color: var(--accent-color);
 }
 
 /*========PORTFOLIO========*/
 
-.projects-list {
-  font-family: "Roboto", "sans-serif";
-}
+/* .projects-list {
+  /*font-family: "Roboto", "sans-serif";
+} */
 
 .filter-btn {
-  font-family: "Roboto", "sans-serif";
+  /*font-family: "Roboto", "sans-serif";*/
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
